@@ -1,8 +1,8 @@
-#main-container {
+/* #main-container {
     margin: auto;
     background-color: aliceblue;
     width: 800px;
-}
+} */
 
 .wrapper {
     border: 1px solid #EEEDF7;
@@ -81,12 +81,17 @@ ul, li {
 
 }
 
+.line {
+    grid-row: 3/5;
+    border-right: 2px solid #000000  
+}
 
 .def-img {
     grid-row: 2;
     grid-column: 3/8;
-    width: 50px;
-    height: 150px;
+    /* width: 50px;
+    height: 150px; */
+
     
 }
 
@@ -127,6 +132,7 @@ ul, li {
 #no {
     grid-row: 5;
     grid-column: 3; 
+    margin-top: 20px;
 
 }
 
@@ -154,32 +160,195 @@ ul, li {
 
 }
 
-            
-            
+#no, #email, #github, #facebook, #spotify {
+    margin-top: 30px;
 
+}
 
-/* Media queries for different screen sizes */
+#def-img {
+    /* height:"200px"; */
+    height:200px;
+    width:450px;
+}
 
-/* Small devices (phones, 600px and down) */
+.img { 
+    height:120px;
+    width:220px;
+
+}
+ 
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* Adjust styles for small devices */
     .wrapper {
-      max-width: 90%;
+        max-width: 90%;
     }
-  }
-  
-  /* Medium devices (tablets, 601px to 900px) */
-  @media only screen and (min-width: 601px) and (max-width: 900px) {
-    /* Adjust styles for medium devices */
+
+    #menu-bar {
+        gap: 20px;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #banmsg {
+        margin-left: 20px;
+        margin-top: -40px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    #about-desc {
+        grid-column: 1/3;
+        margin: 20px;
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 10px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #def-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small devices (landscape phones, 601px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
     .wrapper {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
-  
-  /* Large devices (desktops, 901px and up) */
-  @media only screen and (min-width: 901px) {
-    /* Adjust styles for large devices */
+
+    #menu-bar {
+        gap: 40px;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #banmsg {
+        margin-left: 40px;
+        margin-top: -50px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+    }
+
+    #about-desc {
+        grid-column: 1/4;
+        margin: 30px;
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 20px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #def-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium devices (tablets, 901px to 1200px) */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
     .wrapper {
-      max-width: 60%;
+        max-width: 70%;
     }
-  }
+
+    #menu-bar {
+        gap: 50px;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #banmsg {
+        margin-left: 50px;
+        margin-top: -60px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    #about-desc {
+        grid-column: 1/5;
+        margin: 40px;
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 30px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #def-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Large devices (desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+    .wrapper {
+        max-width: 60%;
+    }
+
+    #menu-bar {
+        gap: 70px;
+    }
+
+    #banmsg {
+        margin-left: 70px;
+        margin-top: -70px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 25px;
+    }
+
+    #about-desc {
+        grid-column: 1/9;
+        margin: 50px;
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 40px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #def-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+            
+
+
