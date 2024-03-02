@@ -1,0 +1,419 @@
+
+.wrapper {
+    border: 1px solid #EEEDF7;
+    margin: 0 auto 0 auto;
+    max-width: 600px;
+    background-color: #EEEDF7 
+
+}
+
+#menu-bar {
+    background-color: #000000;
+    color: aliceblue;
+    display: flex;
+    gap: 70px;
+    height: 40px;
+
+}
+
+#menu-bar > h4 {
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+
+#banner {
+    width: 100%
+}
+
+#banmsg {
+    background-color: #92CACA;
+    color: #000000;
+    font-weight:bolder;
+    display: flex;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 470px;
+    
+}
+
+ul, li {
+    display:flex;
+    gap: 20px;
+    text-decoration: underline;
+    color: #92CACA
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 200px 200px 65px 65px 65px;  */
+    margin-left: 15px;
+    margin-right: 15px;
+    column-gap: 5px
+}
+
+
+#about {
+    grid-row: 1;
+    grid-column: 1/2; 
+    border-right: 2px solid #000000
+
+}
+
+#about-desc {
+    grid-row: 1;
+    grid-column: 3/8; 
+    justify-content: center;
+    /* border-left: 2px solid #000000 */
+}
+    
+#work {
+    grid-row: 2;
+    grid-column: 1/2;
+    border-right: 2px solid #000000 
+
+}
+
+.line {
+    grid-row: 3/5;
+    border-right: 2px solid #000000  
+}
+
+.def-img {
+    grid-row: 2;
+    grid-column: 3/8;
+    /* width: 50px;
+    height: 150px; */
+
+    
+}
+
+
+#frs-img {
+    grid-row: 3;
+    grid-column: 3/5;
+    margin-top: 70px 
+
+}
+
+#sec-img {
+    grid-row: 3;
+    grid-column: 5/8;
+    margin-top: 70px 
+
+}
+
+#trd-img {
+    grid-row: 4;
+    grid-column: 3/5; 
+
+}
+
+#frt-img {
+    grid-row: 4;
+    grid-column: 5/8; 
+
+}
+
+#contact {
+    grid-row: 5;
+    grid-column: 1/2; 
+    border-right: 2px solid #000000
+
+}
+
+#no {
+    grid-row: 5;
+    grid-column: 3; 
+    margin-top: 20px;
+
+}
+
+#email {
+    grid-row: 5;
+    grid-column: 4/5; 
+
+}
+
+#github {
+    grid-row: 5;
+    grid-column: 6; 
+
+}
+
+#facebook {
+    grid-row: 5;
+    grid-column: 7; 
+
+}
+
+#spotify {
+    grid-row: 5;
+    grid-column: 8; 
+
+}
+
+#no, #email, #github, #facebook, #spotify {
+    margin-top: 30px;
+
+}
+
+#def-img {
+    height:200px;
+    width:450px;
+}
+
+.img { 
+    height:120px;
+    width:220px;
+
+}
+ 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 90%;
+      }
+  
+    .content {
+        display: block;
+    }
+
+    #about-desc {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .def-img, #frs-img, #sec-img, #trd-img, #frt-img {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #menu-bar {
+        gap: 10px;
+        height: auto;
+    }
+
+    #menu-bar > h4 {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    #banner {
+        width: 100%;
+        height: auto;
+    }
+
+    #banmsg {
+        margin-top: -30px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+  
+}
+
+/* Small devices (landscape phones, 601px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .wrapper {
+        max-width: 80%;
+    }
+
+    #menu-bar {
+        gap: 40px;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #banmsg {
+        margin-left: 40px;
+        margin-top: -50px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+    }
+
+    #about-desc {
+        grid-column: 1/4;
+        margin: 30px;
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 20px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #def-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium devices (tablets, 901px to 1200px) */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .wrapper {
+        max-width: 70%;
+    }
+
+    #menu-bar {
+        gap: 50px;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #banmsg {
+        margin-left: 50px;
+        margin-top: -60px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    #about-desc {
+        grid-column: 1/5;
+        margin: 40px;
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 30px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #def-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Large devices (desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+    .wrapper {
+        max-width: 60%;
+    }
+
+    #menu-bar {
+        gap: 70px;
+    }
+
+    #banmsg {
+        margin-left: 70px;
+        margin-top: -70px;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    #about-desc {
+        grid-column: 3/8;  
+        margin-left: -70px
+    }
+
+    #no, #email, #github, #facebook, #spotify {
+        margin-top: 40px;
+    }
+
+    /* .img {
+        height:100%;
+        width:100%;
+        
+
+    } */
+
+    #def-img {
+        width: 450px;
+        height: auto;
+        grid-column: 2/9;
+        margin-left: -70px
+        
+    }
+
+    .def-img {
+        grid-row: 2;
+        grid-column: 3/9;
+        
+    
+        
+    }
+    
+    
+    #frs-img {
+        grid-row: 3;
+        grid-column: 3/5;
+        margin-top: 70px;
+        margin-left: -70px
+    
+    }
+    
+    #sec-img {
+        grid-row: 3;
+        grid-column: 5/8;
+        margin-top: 70px;
+        margin-left: -10px 
+    
+    }
+    
+    #trd-img {
+        grid-row: 4;
+        grid-column: 3/5; 
+        margin-top: 10px;
+        margin-left: -70px
+    
+    }
+    
+    #frt-img {
+        grid-row: 4;
+        grid-column: 5/8;
+        margin-top: 10px;
+        margin-left: -10px 
+    
+    }
+    
+    #contact {
+        grid-row: 5;
+        grid-column: 1/2; 
+        border-right: 2px solid #000000
+    }
+    
+    .contact {
+        margin-left: -70px
+    }
+
+    #banmsg {
+        margin-left: 500px;
+        margin-top: -70px;
+    }
+
+    #email {
+    
+        margin-left:-30px; 
+    
+    }
+}
